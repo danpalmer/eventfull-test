@@ -1,4 +1,4 @@
 Twitter: 		ntwitter
-Facebook: 	?
+Facebook: 	facebook-client, facebook-api
 Web: 				express
 Templates:	stache (for mustache)
