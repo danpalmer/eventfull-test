@@ -1,0 +1,17 @@
+Integration:
+
+	Definite:
+ 		- Twitter (tweets, photos?)
+ 		- Facebook (updates, checkins, photos)
+
+ 	Possible:
+ 		- Flickr
+ 		- Foursquare
+
+
+Events:
+ - Start Datetime, End datetime
+ - Owner (and integration API tokens etc)
+ - Privacy settings?
+ - Link to official event?
+   - Three timelines, personal/global/official
