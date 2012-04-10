@@ -1,0 +1,36 @@
+Key:
+    ? = optional
+
+This is 'globally' accessible
+Event:
+    id
+    Organiser Name
+    ?Organiser Twitter username
+    ?Hashtag
+    custom hashtags = [ ]
+    ?Location
+    Timespan
+    ?Description
+    Attendees (derived from people with timelines set up for the event)
+
+
+Personal version
+Timeline:
+    id
+    ?Event
+        ?show official tweets bool
+    ?Twitter username
+    ?Facebook id
+    ?Instagram id 
+    ?Foursquare id
+    ?Description
+    ?custom hashtags = [ ]
+    
+
+Activity Entity:
+    id
+    service_id (i.e. facebook update id, tweet id)
+    service type
+    type (text, image, etc)
+    highlighted bool
+    timestamp

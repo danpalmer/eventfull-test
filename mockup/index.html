@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Eventfull Mockup</title>
+		<link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="bootstrap/bootstrap/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+	</head>
+	<body>
+
+		<div class="container">
+
+			<!-- Top nav bar thing -->
+			<div class="navbar navbar-fixed-top" data-dropdown="dropdown">
+				<div class="navbar-inner">
+					<div class="container">
+						<a href="/" class="brand">London Real-Time</a>
+						<ul class="nav pull-right">
+							<li><a href="#">13th - 15th April</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="main">
+				<!-- Map -->
+				<div id="map"></div>
+
+				<div class="timeline">
+				<div class="row">
+				<div class="span12">
+
+					<div class="activity row">
+						<div class="span2 offset2 type">
+							<img width="100px" src="twitter.png"/>
+						</div>
+						<div class="span5 content">
+							<h3>Cool, so @mark_js and @patricknaish are in for InstaPopSofaPressBookgram. Anyone else?</h3><br/>
+							<p>Sent by <a href="#">@danpalmer</a></p>
+						</div>
+					</div>
+
+					<div class="activity row">
+						<div class="span2 offset2 type">
+							<img width="100px" src="instagram.png"/>
+						</div>
+						<div class="span5 content">
+							<ul class="thumbnails"><li>
+								<div class="thumbnail">
+						      <img width="380px" src="hipster.jpg" alt=""><br/>
+						      <h4>Photo from <a href="#">danpalmer</a></h4>
+						      <p>Some awesome event related sort of photo thing.</p>
+						    </div>
+							</li></ul>
+						</div>
+					</div>
+
+					<div class="activity row">
+						<div class="span2 offset2 type">
+							<img width="100px" src="twitter.png"/>
+						</div>
+						<div class="span5 content">
+							<h3>Cool, so @mark_js and @patricknaish are in for InstaPopSofaPressBookgram. Anyone else?</h3><br/>
+							<p>Sent by <a href="#">@danpalmer</a></p>
+						</div>
+					</div>
+
+					<div class="activity row">
+						<div class="span2 offset2 type">
+							<img width="100px" src="instagram.png"/>
+						</div>
+						<div class="span5 content">
+							<ul class="thumbnails"><li>
+								<div class="thumbnail">
+						      <img width="380px" src="hipster.jpg" alt=""><br/>
+						      <h4>Photo from <a href="#">danpalmer</a></h4>
+						      <p>Some awesome event related sort of photo thing.</p>
+						    </div>
+							</li></ul>
+						</div>
+					</div>
+
+					<div class="activity row">
+						<div class="span2 offset2 type">
+							<img width="100px" src="twitter.png"/>
+						</div>
+						<div class="span5 content">
+							<h3>Cool, so @mark_js and @patricknaish are in for InstaPopSofaPressBookgram. Anyone else?</h3><br/>
+							<p>Sent by <a href="#">@danpalmer</a></p>
+						</div>
+					</div>
+
+					<div class="activity row">
+						<div class="span2 offset2 type">
+							<img width="100px" src="instagram.png"/>
+						</div>
+						<div class="span5 content">
+							<ul class="thumbnails"><li>
+								<div class="thumbnail">
+						      <img width="380px" src="hipster.jpg" alt=""><br/>
+						      <h4>Photo from <a href="#">danpalmer</a></h4>
+						      <p>Some awesome event related sort of photo thing.</p>
+						    </div>
+							</li></ul>
+						</div>
+					</div>
+
+					<div class="activity row">
+						<div class="span2 offset2 type">
+							<img width="100px" src="twitter.png"/>
+						</div>
+						<div class="span5 content">
+							<h3>Cool, so @mark_js and @patricknaish are in for InstaPopSofaPressBookgram. Anyone else?</h3><br/>
+							<p>Sent by <a href="#">@danpalmer</a></p>
+						</div>
+					</div>
+
+					<div class="activity row">
+						<div class="span2 offset2 type">
+							<img width="100px" src="instagram.png"/>
+						</div>
+						<div class="span5 content">
+							<ul class="thumbnails"><li>
+								<div class="thumbnail">
+						      <img width="380px" src="hipster.jpg" alt=""><br/>
+						      <h4>Photo from <a href="#">danpalmer</a></h4>
+						      <p>Some awesome event related sort of photo thing.</p>
+						    </div>
+							</li></ul>
+						</div>
+					</div>
+
+				</div>
+				</div>
+				</div>
+
+			</div>
+
+			<!-- Bottom slider bar thing -->
+			<div class="navbar navbar-fixed-bottom" data-dropdown="dropdown">
+				<div class="navbar-inner">
+					<div class="container">
+						<a href="/" class="brand">Slider thingy</a>
+						<ul class="nav pull-right"></ul>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+
+
+		<script>
+			var map, markerImage;
+
+      function initialize() {
+        var myOptions = {
+          zoom: 3,
+          center: new google.maps.LatLng(20, 0),
+          mapTypeId: google.maps.MapTypeId.TERRAIN,
+          /*mapTypeId: google.maps.MapTypeId.ROADMAP,*/
+          backgroundColor: '#fff',
+          mapTypeControl: false,
+          streetViewControl: false
+        };
+
+        map = new google.maps.Map(document.getElementById('map'), myOptions);
+        $('#map').width(940).height(400);
+
+        markerImage = new google.maps.MarkerImage('/public/pin.png');
+	      markerImage.size = new google.maps.Size(32, 39);
+	      markerImage.anchor = new google.maps.Point(6, 5);
+      }
+      function loadScript() {
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = '//maps.googleapis.com/maps/api/js?sensor=false&' +
+            'callback=initialize';
+        document.body.appendChild(script);
+      }
+
+      window.onload = loadScript;
+		</script>
+	</body>
+</html>
